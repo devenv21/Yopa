@@ -30,5 +30,6 @@ public class DriverManager {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get(URL);
         driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
     }
 }
